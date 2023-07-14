@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+body {
+  background: rgb(231, 230, 230);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 5% auto;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 10px rgb(0, 0, 0.1);
+}
+.leftbox {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+.leftbox h1 {
+  letter-spacing: 1px;
+  color: #000;
+}
+.leftbox h1:hover {
+  color: blue;
+}
+.rightbox {
+  width: 500px;
+  margin: auto;
+  height: 550px;
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+  background: #fff;
+}
+
+.rightbox img {
+  width: 500px;
+  height: 550px;
+  padding: 30px;
+}
+
+.leftbox p {
+  color: rgb(177, 172, 172);
+}
+
+.leftbox .forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.leftbox h4 {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.leftbox .forget i {
+  width: 0.9rem;
+}
+.leftbox .forget i:hover {
+  background: rgb(91, 59, 233);
+  color: white;
+  border-radius: 50%;
+}
+#email,
+#password {
+  width: 20rem;
+  border-radius: 1.2rem;
+  outline: none;
+  padding: 0.5rem;
+  border: 1px solid gray;
+}
+#email:focus,
+#password:focus {
+  border: 2px solid rgb(228, 126, 228);
+}
+.forget a:hover {
+  color: rgb(191, 52, 204);
+  font-weight: 600;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.btn button {
+  margin: 10px 0;
+  width: 20rem;
+  padding: 10px;
+  border-radius: 1.3rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(99, 26, 187, 1) 35%,
+    rgba(70, 50, 255, 1) 92%
+  );
+}
+.btn button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(70, 50, 255, 1) 35%,
+    rgba(99, 26, 187, 1) 92%
+  );
+}
+
+.leftbox {
+  background: #fff;
+}
+.forget a {
+  margin-right: 80px;
+}
+
+@media screen and (max-width: 1020px) {
+  .container {
+    width: 500px;
+  }
+  .leftbox {
+    border-radius: 1.2rem;
+  }
+  .rightbox {
+    display: none;
+  }
+}
